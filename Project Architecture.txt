@@ -1,0 +1,12 @@
+
+
+three layered architecture - loosely coupled
+
+presentation layer - view/UI - input / output
+service layer - input validations and then the bussiness logic
+DAO(Data Access Object) layer - to interact with the Data Storage
+
+
+model / pojo(plain old java object)/ TO (Transfer object)/ VO (Value object) -  to carry data to and fro, it is not a layer
+
+Product
