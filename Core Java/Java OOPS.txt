@@ -1,0 +1,53 @@
+OOPS Concept
+------------
+
+Inheritence
+	- one class extends another class
+	- the class that is extended from is called super class / base class/ parent class
+	- the other class is called sub class / derived class / child class
+	- we acheived code reusability
+	- we get is - a relation between the classes
+	- types of inheritence
+	- doesnt support multiple inheritence - class C extends A, B
+
+please explore has-a relation between two classes and how is it acheived?
+
+
+Polymorphism
+ - method overriding
+	- inheritence is a pre-requisite
+	- redefining a functionality of the super class in the sub class
+	- same method signature and return type in super and sub class
+	- over ride carefully other wise you up overloading
+	- runtime polymorphism
+
+ - method overloading
+	- same method name with different arguments
+	- different arguments means order, type or number of arguments
+	- we do not consider the return type here
+	- inheritence is not a pre-requisite
+	- compile time polymorphism
+
+Encapsulation
+	- hiding of data
+	- wrapping up the data members and the functions into a single unit
+	- data members of the class should be private
+	- and provide public getters/setters
+
+Abstraction
+
+
+access specifiers -  applied to members of the class
+-----------------
+
+			within the class	within the package	outside package+inherited class		outside the package
+public			yes			yes			yes					yes
+
+protected		yes			yes			yes					no
+
+default/no modifier	yes			yes			no					no
+
+private			yes			no			no					no
+
+
+class - public or default
