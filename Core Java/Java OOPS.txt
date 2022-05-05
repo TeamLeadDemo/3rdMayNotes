@@ -34,7 +34,7 @@ Encapsulation
 	- data members of the class should be private
 	- and provide public getters/setters
 
-Abstraction
+
 
 
 access specifiers -  applied to members of the class
@@ -51,3 +51,24 @@ private			yes			no			no					no
 
 
 class - public or default
+
+
+Abstraction
+	- higligting the essential information
+	- abstract classes and interfaces
+	abstract class
+	- abstract methods do not have body definition
+	- class becomes abstract if it has atleast one abstract methods
+	- cannot create objects for abstarct classes
+	- abstract classes are meant to be inherited
+	- the child which inhereits abstract class should provide the definition for the abstract method, thereby the child class becomes the concrete/complete class
+	interfaces
+	- prior to java 8 , interfaces were pure abstract classes 
+	- after java8 interfaces can contain abstract methods, default methods, static methods
+	- interfaces can have variables declared in them, and they are by default public static final variables
+	- any method in an interface is by default public
+	- marker interfaces are empty interfaces
+class ---implements--> interface, interface, interface
+interface ----extends----> interface, interface, interface
+class -----extends-----> class
+interface ----------> class no relation
