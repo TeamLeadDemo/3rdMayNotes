@@ -1,19 +1,46 @@
+RDB - Relational Databases
+RDBMS - Relational Database Management System
+	- eg : Oracle, Postgres, SQLServer, MySql etc
+
+databases, tables, rows/records, columns
+
+
+student_details(table)
+stud_id		stud_name	stud_mark
+101		ABC		60
+102		XYZ		50
+
+SQL - Structured Querying Language, 
+    - compiled and executed
+
+ANSII SQL - standard followed by all sql DB software vendors
+dialect - 
+
+ORM - Object Relational Mapping (dont have to worry about this in week2) -Spring Data , Hibernate, Ibatis
+
 References
 	https://www.postgresqltutorial.com/
 	https://www.postgresql.org/docs/current/tutorial-table.html
 	https://www.simplilearn.com/tutorials/sql-tutorial/what-is-normalization-in-sql#:~:text=Normalization%20is%20the%20process%20to,data%20from%20the%20relational%20tables.
 
-Categories of SQL queries
-	- DDL
-	- DML
-	- DQL
-	- TCL
-	- DCL
+5 Categories of SQL queries
+	- DDL (Data Definition Language)
+		- deal with the structure of the table
+		- create, alter, drop, truncate
+	- DML (Data Manipulation Language)
+		- deal with the data in the table
+		- insert, update, delete
+	- DQL (Data Querying Language)
+		- select
+	- TCL (Transaction Control language)
+		- commit, rollback, savepoints
+	- DCL (Data Control language)
+		- granting and revoking priveliges to the users
+		- grant, revoke
 
-
-
-
-
+Constraints
+Normalization, ACID properties for transactions -very strong interview question
+PL/SQL - stored procedure, functions, triggers
 
 
 So, in summary, the different types of database keys are:
@@ -26,3 +53,56 @@ Candidate key: an attribute that could be the primary key.
 Alternate key: a candidate key that is not the primary key.
 Unique key: an attribute that can be unique on the table. Can also be called an alternate key.
 Foreign key: an attribute that is used to refer to another record in another table.
+
+
+
+student_details
+student_id(PK)
+101
+102
+103
+
+
+course_details
+course_id(PK)
+501
+502
+503
+
+student_course_details
+
+stud_id course_id id
+101 	502	   1	
+101 	503	   2	
+102 	501	   3
+102 	502        4
+103 	501        5
+103 	503        6
+
+
+stud_id  course_id
+
+
+employee_project_details
+emp_id(PK) , proj_id(PK), emp_name, proj_description, proj_rate
+
+
+emp_id(PK), proj_id(PK), proj_rate
+emp_id, emp_name
+proj_id, proj_description
+
+
+meta commands in postgres
+--------------------------
+\l - lists all the databases
+\dt - list all the tables in the current database that you are connected to
+\c - connect to a particular database
+
+
+4 things that a client to contact the server
+	- protocol 
+	- ip address
+	- port
+	- credententials if it is secured
+	
+	- network
