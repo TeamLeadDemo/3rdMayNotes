@@ -1,0 +1,28 @@
+References
+	https://www.postgresqltutorial.com/
+	https://www.postgresql.org/docs/current/tutorial-table.html
+	https://www.simplilearn.com/tutorials/sql-tutorial/what-is-normalization-in-sql#:~:text=Normalization%20is%20the%20process%20to,data%20from%20the%20relational%20tables.
+
+Categories of SQL queries
+	- DDL
+	- DML
+	- DQL
+	- TCL
+	- DCL
+
+
+
+
+
+
+
+So, in summary, the different types of database keys are:
+
+Natural key: an attribute that can uniquely identify a row, and exists in the real world.
+Surrogate key: an attribute that can uniquely identify a row, and does not exist in the real world.
+Composite key: more than one attribute that when combined can uniquely identify a row.
+Primary key: the single unique identifier for the row.
+Candidate key: an attribute that could be the primary key.
+Alternate key: a candidate key that is not the primary key.
+Unique key: an attribute that can be unique on the table. Can also be called an alternate key.
+Foreign key: an attribute that is used to refer to another record in another table.
