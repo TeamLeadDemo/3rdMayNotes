@@ -1,11 +1,10 @@
-OOP Principles references
---------------------------
-OOP DRY Principle - Dont't Repeat Yourself 
-------------------------------------------
-Reference
-	https://www.w3schools.blog/dry-dont-repeat-yourself-in-java#:~:text=DRY%20object%2Doriented%20design%20principle,it%20in%20a%20separate%20method.
+OOP Solid Principles references
+-------------------------------
+	https://www.baeldung.com/solid-principles
 
-OOP Single Responsibility Principle
------------------------------------
-Reference
-	https://www.baeldung.com/java-single-responsibility-principle
+the five principles are
+	Single Responsibility
+	Open/Closed
+	Liskov Substitution
+	Interface Segregation
+	Dependency Inversion
