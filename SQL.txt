@@ -106,3 +106,47 @@ meta commands in postgres
 	- credententials if it is secured
 	
 	- network
+
+
+
+
+(A, B , C)
+(K, L)
+
+(A,K) (A,L) (B,K) (B,L) (C,K) (C,L)
+
+
+two styles
+	- theta style - old
+	- join style - new
+
+
+Self join example
+-----------------
+write a query to display employe names and the names of their manager
+
+
+CREATE TABLE emp_manager_details(emp_id INT, emp_name VARCHAR(20), emp_salary INT, mgr_id INT, PRIMARY KEY(emp_id), FOREIGN KEY(mgr_id) REFERENCES emp_manager_details(emp_id));
+
+INSERT INTO emp_manager_details VALUES(101,'ABC', 10000, 101);
+INSERT INTO emp_manager_details VALUES(102,'XYZ', 8000, 101);
+INSERT INTO emp_manager_details VALUES(103,'LMN', 8000, 101);
+INSERT INTO emp_manager_details VALUES(104,'QWE', 8000, 102);
+
+select * from emp_manager_details;
+
+SELECT emp1.emp_name, emp2.emp_name manager_name FROM emp_manager_details emp1 INNER JOIN emp_manager_details emp2 ON emp1.mgr_id=emp2.emp_id;
+
+
+emp_id  emp_name	mgr_id
+101 	ABC 		103 
+102 	XYZ		103
+103 	LMN 		104
+104 	QWE		104
+
+
+emp_id  emp_name	mgr_id
+101 	ABC 		103 
+102 	XYZ		103
+103 	LMN 		104
+104 	QWE		104
