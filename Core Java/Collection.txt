@@ -49,7 +49,7 @@ Set
 	- everytime when an object is added it calls equals() to check for duplicates
 
 SortedSet
-	- follows all rules imposed by Set because it is a subset of Set + extra
+	- follows all rules imposed by Set because it is an extension of Set + extra
 	- it sorts the objects added to it by calling the compareTo method of the object that was added
 	- which means any object added to a SortedSet implementation should implement Comparable interface
 
@@ -60,3 +60,13 @@ Queue
 	- not indexed
 	- allows duplicate values
 
+
+Map
+	- works with keys and values
+	- no duplicate keys
+	- can have duplicate values
+
+SortedMap
+	- follows all rules imposed by Map because it is an Extension of Map + extra
+	- it sorts the entries of the map in the order of the key
+	- which means any object added as a key to the TreeSet implementation should implement Comparable interface
