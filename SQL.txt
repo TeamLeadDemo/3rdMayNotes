@@ -32,6 +32,13 @@ References
 		- insert, update, delete
 	- DQL (Data Querying Language)
 		- select
+		clause
+		- projection
+		- from clause
+		- restriction - where clause
+		- grouping
+		- grouping restriction - having clause
+		- order by clause
 	- TCL (Transaction Control language)
 		- commit, rollback, savepoints
 	- DCL (Data Control language)
@@ -42,6 +49,12 @@ Constraints
 Normalization, ACID properties for transactions -very strong interview question
 PL/SQL - stored procedure, functions, triggers
 
+
+2 types of functions
+	scalar function
+		- work on individual record
+	aggregate function
+		- works on all the record in one go
 
 So, in summary, the different types of database keys are:
 
@@ -150,3 +163,10 @@ emp_id  emp_name	mgr_id
 102 	XYZ		103
 103 	LMN 		104
 104 	QWE		104
+
+
+
+
+
+
+
