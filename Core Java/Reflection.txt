@@ -5,6 +5,19 @@ logging
 
 Reflection api
 
+Annotations
+-------------
+	- are used to convey information to external tools like compiler, jre, framework
+
+	- inbuilt annotation provided by core java library or any framework
+		annotations provided by core java library
+		 - @Override, @FuntionalInterface, @Deprecated, @SuppressWarnings
+		 - meta-annotation : used above other annotations
+		 - @Target, @Retention, @Documented, @Inherited
+		
+	- custom annotation
+
+
 Assignments
 ------------
 1) stimulate the javap command
@@ -26,6 +39,11 @@ Assignments
 @Test
 public void addTestPositive(){
 }
+
+	- create a custom annotation @MyTest (1)
+	- create a test class similar to how we do in JUnit (2) 
+	- Annotate the test methods with the custom annotation @MyTest
+	- create another class with main, use reflection api on the test class and invoke the methods annotated with @MyTest
 
 3) custom logging framework - may not be reflection
 			    - understand how log4j works
