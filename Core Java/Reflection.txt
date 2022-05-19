@@ -1,0 +1,42 @@
+java reflection
+java annotations
+code coverage
+logging
+
+Reflection api
+
+Assignments
+------------
+1) stimulate the javap command
+	- introspect a class and this class name should be given as input by the user
+		- introspection is done in 2 steps
+			- get hold of the class object representation of the class name provided as input
+			- call the various different methods of the class object to print an output similar to javap's output
+	- sample input - reflectiondemo.Room (or) java.lang.Integer 
+		       - either through Scanner or as a commandline argument
+ 	- ouput - similar to what you get when you run the javap command
+
+2) stimulate a testing framework's annotations
+
+@Test - @MyTest
+@Before
+@After
+
+
+@Test
+public void addTestPositive(){
+}
+
+3) custom logging framework - may not be reflection
+			    - understand how log4j works
+
+
+
+
+first step 
+	- obtain a Class object of what you are trying to introspect
+
+	- 3 main ways
+fields
+constructors
+methods
